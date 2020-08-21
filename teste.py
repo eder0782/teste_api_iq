@@ -1,9 +1,12 @@
-from iqoptionapi.stable_api import IQ_Option
+from api_iq.iqoptionapi.stable_api import IQ_Option
 import multiprocessing, threading
 import time
 import sys, os
+from datetime import datetime, timedelta
 
 API = IQ_Option('eder0782@hotmail.com','iqo473pti116')
+
+
 
 var = True
 
@@ -38,6 +41,12 @@ def muda_var(valor):
     var = valor
 
 
-   
+API.connect()
+
+print(API.get_server_timestamp())
+
+print(datetime.fromtimestamp(API.get_server_timestamp()))
+
+
     
     

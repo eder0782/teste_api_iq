@@ -1,5 +1,5 @@
 #from app.models import tabelas
-from 1
+from api_iq.iqoptionapi.stable_api import IQ_Option
 import time
 from datetime import datetime
 
